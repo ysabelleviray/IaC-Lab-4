@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "elle-org"
+    workspaces {
+      name = "fecp-1007-lab5"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
